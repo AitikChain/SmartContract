@@ -940,7 +940,7 @@ contract AitikChain_Presale is ReentrancyGuard, Ownable {
                     .claimedVestingAmount += transferAmount;
                 userClaimData[msg.sender][_id].claimCount++;
             } else {
-                revert("Wait for next claiim");
+                revert("Wait for next claim");
             }
         }
         return true;
